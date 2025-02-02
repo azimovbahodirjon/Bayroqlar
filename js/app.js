@@ -2,6 +2,8 @@ const loaderContainer = document.querySelector(".loader-container");
 const body = document.querySelector("body");
 const darkBtn = document.querySelector(".dark-btn");
 const list = document.querySelector("#list");
+const p = document.querySelector(".p");
+const img = document.querySelector("img");
 
 async function getData() {
   loaderContainer.classList.remove("hidden");
@@ -26,25 +28,24 @@ function generateCountires(countries) {
     let li = document.createElement("li");
     let p = document.createElement("p");
     let img = document.createElement("img");
-    let cap = document.createElement("p");
-    let pop = document.createElement("p");
-    let reg = document.createElement("p");
+    let capital = document.createElement("p");
+    let population = document.createElement("p");
+    let region = document.createElement("p");
 
     img.src = c.flags.svg;
     img.alt = c.flags.alt;
     p.textContent = c.name.common;
-    cap.textContent = c.capital;
-    pop.textContent = c.population;
-    reg.textContent = c.region;
+    capital.textContent = c.capital;
+    population.textContent = c.population;
+    region.textContent = c.region;
 
     li.appendChild(img);
     img.width = "264";
     img.height = "160";
-
     li.appendChild(p);
-    li.appendChild(pop);
-    li.appendChild(reg);
-    li.appendChild(cap);
+    li.appendChild(population);
+    li.appendChild(region);
+    li.appendChild(capital);
     list.appendChild(li);
   });
 }
