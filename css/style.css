@@ -126,25 +126,27 @@ img {
 }
 
 .input__div {
-  background-image: url(../Img/input__icon.svg);
+  /* background-image: url(../Img/input__icon.svg); */
   background-repeat: no-repeat;
   background-position: left 20px center;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 9px 0px #0000000e;
+  border-radius: 5px;
+  width: 480px;
+  height: 56px;
+  padding-left: 28px;
 }
 
 .input {
-  width: 480px;
-  height: 56px;
   background-color: var(--white-bg-color);
   padding: 19px 32px;
   display: flex;
   align-items: center;
   gap: 24px;
-  box-shadow: 0px 2px 9px 0px #0000000e;
-  border-radius: 5px;
   color: inherit;
-  placeholder {
-    padding-left: 20px;
-  }
+  border: 0;
+  outline: 0;
 }
 
 .davlat {
