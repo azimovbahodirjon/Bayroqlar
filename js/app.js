@@ -35,9 +35,13 @@ function generateCountires(countries) {
     img.src = c.flags.svg;
     img.alt = c.flags.alt;
     p.textContent = c.name.common;
-    capital.textContent = c.capital;
-    population.textContent = c.population;
-    region.textContent = c.region;
+    capital.textContent = `capital: ${c.capital}`;
+    population.textContent = `population:  ${c.population}`;
+    region.textContent = `region: ${c.region}`;
+    p.classList.add("davlat");
+    capital.classList.add("qwerty");
+    population.classList.add("qwerty");
+    region.classList.add("qwerty");
 
     li.appendChild(img);
     img.width = "264";
